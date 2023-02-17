@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col" *ngFor="let item of artforms">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{item.name}}</h5>
+                  <p class="card-text">{{item.desc}}.</p>
+                  <a (click)="showmore(item.id)" class="btn btn-primary">Show more</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
